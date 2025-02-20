@@ -1,42 +1,55 @@
 # AI/Machine Learning Intern Challenge: Simple Content-Based Recommendation
+---
+## Dataset
 
-**Deadline**: Sunday, Feb 23th 11:59 pm PST
+- **Source**: The dataset used for the recommendation system comes from [Kaggle](https://www.kaggle.com/datasets). It contains a collection of book titles, authors, and ratings by users.
+- **Steps to Load**:
+  - Download the dataset from [this link](https://www.kaggle.com/datasets).
+  - Unzip the dataset into a directory.
+  - Place the dataset file (`books.csv`) in the `/data` directory.
+  - The dataset includes columns such as `Book Title`, `Author`, `Genres`, and `Rating`.
+  - If necessary, preprocess the dataset by cleaning missing values or removing duplicates.
 
 ---
 
-## Overview
+## Setup
+### Clone this Repository
+ ```bash
+ git clone https://github.com/apoorvareddy612/lumaa-spring-2025-ai-ml.git
+ ```
+### Python Version:
+- This project requires Python 3.10
 
-Build a **content-based recommendation system** that, given a **short text description** of a user’s preferences, suggests **similar items** (e.g., movies) from a small dataset. This challenge should take about **3 hours**, so keep your solution **simple** yet **functional**.
+  Ensure you have Python installed by running:
+  ```bash
+  python --version
+  ```
+### Virtual Environment:
+To set up a virtual environment in the cloned repository
 
-### Example Use Case
+**Create a virtual environment**:
+  ```bash
+  python3.10 -m venv venv
+  ```
+Activate the virtual environment:
+- On Windows:
+  ```bash
+  venv\Scripts\activate
+  ```
+- On macOS/Linux:
+  ```bash
+  source venv/bin/activate
+  ```
+### Install Dependencies:
+Once the virtual environment is activated, install the project dependencies by running:
+ ```bash
+ pip install -r requirements.txt
+ ```
+### Running code  
 
-- The user inputs:  
-  *"I love thrilling action movies set in space, with a comedic twist."*  
-- Your system processes this description (query) and compares it to a dataset of items (e.g., movies with their plot summaries or keywords).  
-- You then return the **top 3–5 “closest” matches** to the user.
 
----
 
-## Requirements
 
-1. **Dataset**  
-   - Use a **small** public dataset of items (e.g., a list of movies with plot summaries, or other textual descriptions).  
-   - Make sure the dataset is easy to handle (maybe 100–500 rows) so the solution remains quick to implement and run.  
-   - Include the dataset in your forked repository *or* provide instructions/link on how to download it.  
-
-2. **Approach**  
-   - **Content-Based**: At a minimum, use text similarity to recommend items.  
-     - For instance, you can transform both the user’s text input and each item’s description into TF-IDF vectors and compute **cosine similarity**.  
-   - Return the **top N** similar items (e.g., top 5).
-
-3. **Code Organization**  
-   - You may use a **Jupyter Notebook** or **Python scripts**.  
-   - Keep it **readable** and **modular** (e.g., one section for loading data, one for building vectors, one for computing similarity, etc.).  
-   - Briefly comment or docstring your key functions/sections.
-
-4. **Output**  
-   - When given an input description (e.g., `"I like action movies set in space"`), your system should print or return a list of recommended items (e.g., 3–5 titles).  
-   - Include the similarity score or rank if you’d like.
 
 5. **Summary & Instructions**  
    - A short `README.md` that includes:
