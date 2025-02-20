@@ -1,10 +1,9 @@
 import pandas as pd
 import numpy as np
 import nltk
-import string
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-from nltk.corpus import stopwords, wordnet
+from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 import spacy
@@ -12,7 +11,6 @@ import spacy
 # Download required NLTK datasets
 nltk.download("stopwords")
 nltk.download("punkt")
-nltk.download("wordnet")
 
 # Sample movie dataset
 data = pd.read_csv("./data/data.csv")

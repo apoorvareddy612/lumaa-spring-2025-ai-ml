@@ -1,6 +1,5 @@
 #Importing the libraries
 import pandas as pd
-import numpy as np
 import re
 from nltk.corpus import stopwords
 
