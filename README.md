@@ -6,7 +6,7 @@
  git clone https://github.com/apoorvareddy612/lumaa-spring-2025-ai-ml.git
  ```
 ### Python Version:
-- This project requires Python 3.10
+- This project requires Python 3.X
 
   Ensure you have Python installed by running:
   ```bash
@@ -17,7 +17,7 @@ To set up a virtual environment in the cloned repository
 
 **Create a virtual environment**:
   ```bash
-  python3.10 -m venv venv
+  python3 -m venv venv
   ```
 Activate the virtual environment:
 - On Windows:
