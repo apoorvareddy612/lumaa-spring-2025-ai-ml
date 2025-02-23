@@ -67,16 +67,6 @@ I have implemented two ways, one which is the base code and the other one is fin
 The below image shows the compared results of tfidf and fine-tuned version of it \
 ![Screenshot 2025-02-23 at 4 39 29 PM](https://github.com/user-attachments/assets/89413de6-f99d-47d3-a26f-c6c78acda4d5)
 
-
-5. **Summary & Instructions**  
-   - A short `README.md` that includes:
-     - **Dataset**: Where it’s from, any steps to load it.  
-     - **Setup**: Python version, virtual environment instructions, and how to install dependencies (`pip install -r requirements.txt`).  
-     - **Running**: How to run your code (e.g., `python recommend.py "Some user description"` or open your notebook in Jupyter).  
-     - **Results**: A brief example of your system’s output for a sample query.
-
----
-
 ## Deliverables
 
 3. **Short Video Demo**  
