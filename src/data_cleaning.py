@@ -10,6 +10,7 @@ os.system('python -c "import ssl; import certifi; ssl._create_default_https_cont
 nltk.download("stopwords")
 nltk.download("punkt")
 nltk.download("wordnet")
+nltk.download("punkt_tab")
 
 # Ensure a dataset file is provided
 if len(sys.argv) < 2:

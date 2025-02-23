@@ -16,6 +16,7 @@ os.system('python -c "import ssl; import certifi; ssl._create_default_https_cont
 nltk.download("stopwords")
 nltk.download("punkt")
 nltk.download("wordnet")
+nltk.download("punkt_tab")
 
 # Load dataset
 data = pd.read_csv("./data/data.csv")
