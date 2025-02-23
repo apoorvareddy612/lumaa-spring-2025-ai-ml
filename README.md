@@ -5,6 +5,10 @@
  ```bash
  git clone https://github.com/apoorvareddy612/lumaa-spring-2025-ai-ml.git
  ```
+### Change the path to this repo
+ ```bash
+ cd lumaa-spring-2025-ai-ml
+ ```
 ### Python Version:
 - This project requires Python 3.X
 
