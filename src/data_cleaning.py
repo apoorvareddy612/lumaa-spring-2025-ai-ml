@@ -1,3 +1,9 @@
+import os 
+os.system('python -c "nltk.download("punkt")"')
+os.system('python -c "nltk.download("punkt_tab")"')
+os.system('python -c "nltk.download("stopwords")"')
+os.system('python -c "nltk.download("wordnet")"')
+
 import pandas as pd
 import re
 import sys
