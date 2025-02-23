@@ -3,6 +3,7 @@ import sys
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
+
 # Recommendation function
 def recommend_movies(user_input, dataset, top_n=5):
     # Combine title, synopsis, and tags for textual comparison

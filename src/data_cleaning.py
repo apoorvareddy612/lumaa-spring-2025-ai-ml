@@ -1,17 +1,15 @@
 import os 
-os.system('python -c "nltk.download("punkt")"')
-os.system('python -c "nltk.download("punkt_tab")"')
-os.system('python -c "nltk.download("stopwords")"')
-os.system('python -c "nltk.download("wordnet")"')
-
+import nltk
 import pandas as pd
 import re
 import sys
 from nltk.corpus import stopwords
-import nltk
+os.system('python -c "import ssl; import certifi; ssl._create_default_https_context = ssl._create_unverified_context; import nltk; nltk.download(\'punkt\')"')
 
 # Download stopwords if not already available
 nltk.download("stopwords")
+nltk.download("punkt")
+nltk.download("wordnet")
 
 # Ensure a dataset file is provided
 if len(sys.argv) < 2:

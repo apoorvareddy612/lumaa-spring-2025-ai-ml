@@ -8,6 +8,9 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 import spacy
+import os 
+os.system('python -m spacy download en_core_web_sm')
+os.system('python -c "import ssl; import certifi; ssl._create_default_https_context = ssl._create_unverified_context; import nltk; nltk.download(\'punkt\')"')
 
 # Download required NLTK datasets
 nltk.download("stopwords")
