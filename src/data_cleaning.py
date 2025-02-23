@@ -43,3 +43,5 @@ data.rename(columns={'plot_synopsis': 'synopsis', 'imdb_id': 'id'}, inplace=True
 
 # Save the cleaned data
 data.to_csv('./data/data.csv', index=False)
+
+#Salary Expacted per month : $1600 - $2400

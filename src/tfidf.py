@@ -1,15 +1,9 @@
-#Importing libraries
 import pandas as pd
+import sys
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-#Recommendation function
-'''This function takes user input and dataset as arguments and returns a list of recommended movies
-It uses TF-IDF Vectorizer to convert text data into numerical data and cosine similarity to find similar movies
-It returns a dataframe with the top 5 recommended movies
-It uses the title, synopsis, and tags of the movies to find similar movies
-It uses the cosine similarity to find similar movies'''
-
+# Recommendation function
 def recommend_movies(user_input, dataset, top_n=5):
     # Combine title, synopsis, and tags for textual comparison
     dataset['combined_text'] = dataset['title'] + ' ' + dataset['synopsis'] + ' ' + dataset['tags']
@@ -25,16 +19,30 @@ def recommend_movies(user_input, dataset, top_n=5):
     cosine_similarities = cosine_similarity(user_tfidf, tfidf_matrix).flatten()
     
     # Add similarity scores to the dataframe
-    data["tfidf_score"] = cosine_similarities
+    dataset["tfidf_score"] = cosine_similarities
 
     # Sort by similarity score
-    recommended_movies = data.sort_values(by="tfidf_score", ascending=False).head(5)
+    recommended_movies = dataset.sort_values(by="tfidf_score", ascending=False).head(top_n)
 
     # Display top recommendations
     return recommended_movies[["title", "tfidf_score"]]
 
+# Ensure a user input is provided
+if len(sys.argv) < 2:
+    print("Usage: python tfidf.py \"Your movie preference description\"")
+    sys.exit(1)
 
+# Get user input from command-line arguments
+user_query = sys.argv[1]
+
+# Load dataset
 data = pd.read_csv('./data/data.csv')
-user_query = "I love thrilling action movies set in space, with a comedic twist."
+
+# Get recommendations
 recommendations = recommend_movies(user_query, data)
+
+# Print recommendations
 print(recommendations)
+
+
+#Salary Expacted per month : $1600 - $2400
