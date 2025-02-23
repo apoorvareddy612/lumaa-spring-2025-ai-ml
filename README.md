@@ -2,12 +2,12 @@
 ---
 ## Dataset
 
-- **Source**: The dataset used for the recommendation system comes from [Kaggle](https://www.kaggle.com/datasets). It contains a collection of book titles, authors, and ratings by users.
+- **Source**: The dataset used for the recommendation system comes from [Kaggle](https://www.kaggle.com/datasets/cryptexcode/mpst-movie-plot-synopses-with-tags/data). It contains a collection of titles, plot synopsis and tags
 - **Steps to Load**:
-  - Download the dataset from [this link](https://www.kaggle.com/datasets).
+  - Download the dataset from [this link](https://www.kaggle.com/datasets/cryptexcode/mpst-movie-plot-synopses-with-tags/data).
   - Unzip the dataset into a directory.
-  - Place the dataset file (`books.csv`) in the `/data` directory.
-  - The dataset includes columns such as `Book Title`, `Author`, `Genres`, and `Rating`.
+  - Place the dataset file (`mpst_full_data.csv`) in the `/data` directory.
+  - The dataset includes columns such as `imdb_id`, `title`, `plot_synopsis`, and `tags`.
   - If necessary, preprocess the dataset by cleaning missing values or removing duplicates.
 
 ---
