@@ -46,10 +46,23 @@ Once the virtual environment is activated, install the project dependencies by r
  pip install -r requirements.txt
  ```
 ### Running code  
-
-
-
-
+In this repository follow below : \
+two folders : data and src \
+data consist of data.csv, which is already cleaned and pre-processed \
+src consist of data_cleaning.py, tfidf.py and fine-tuned.py \
+If you want to clean and pre-process on the original data, I recommend to download the data from kaggle and then run the data_cleaning.py 
+  ```bash
+  python data_cleaning.py mpst_full_data.csv
+  ```
+I have implemented two ways, one which is the base code and the other one is fine tuned on the top of it. \
+tfidf.py is a base code file 
+  ```bash
+  python tfidf.py "I like action movies set in space"
+  ```
+fine-tuned.py is the fine tuned code
+  ```bash
+  python fine-tuned.py "I like action movies set in space"
+  ```
 
 5. **Summary & Instructions**  
    - A short `README.md` that includes:
@@ -61,16 +74,6 @@ Once the virtual environment is activated, install the project dependencies by r
 ---
 
 ## Deliverables
-
-1. **Fork the Public Repository**  
-   - **Fork** this repo into your own GitHub account.
-
-2. **Implement Your Solution**  
-   - Load and preprocess your dataset (e.g., read CSV, handle text columns).  
-   - Convert text data to vectors (e.g., TF-IDF).  
-   - Implement a function to compute similarity between the user’s query and each item’s description.  
-   - Return the top matches.
-   - Salary expectation per month (Mandatory)
 
 3. **Short Video Demo**  
    - In a `.md` file (e.g., `demo.md`) within your fork, paste a link to a **brief screen recording** (video link).  
