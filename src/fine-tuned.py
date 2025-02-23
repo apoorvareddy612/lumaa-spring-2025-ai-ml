@@ -63,7 +63,7 @@ def recommend_movies(user_query, top_n=5):
     similarity_scores = cosine_similarity(query_vector, tfidf_matrix).flatten()
     
     # Normalize TF-IDF scores to [0,1]
-    data['tfidf_score'] = (similarity_scores - np.min(similarity_scores)) / (np.max(similarity_scores) - np.min(similarity_scores) + 1e-6)
+    data['tfidf_score'] = similarity_scores
 
     # Return top N recommended movies
     recommendations = data.sort_values(by="tfidf_score", ascending=False).head(top_n)[["title", "tags", "tfidf_score"]]

@@ -25,7 +25,7 @@ def recommend_movies(user_input, dataset, top_n=5):
     recommended_movies = dataset.sort_values(by="tfidf_score", ascending=False).head(top_n)
 
     # Display top recommendations
-    return recommended_movies[["title", "tfidf_score"]]
+    return recommended_movies[["title","tags", "tfidf_score"]]
 
 # Ensure a user input is provided
 if len(sys.argv) < 2:
