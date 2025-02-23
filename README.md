@@ -1,17 +1,5 @@
 # AI/Machine Learning Intern Challenge: Simple Content-Based Recommendation
 ---
-## Dataset
-
-- **Source**: The dataset used for the recommendation system comes from [Kaggle](https://www.kaggle.com/datasets/cryptexcode/mpst-movie-plot-synopses-with-tags/data). It contains a collection of titles, plot synopsis and tags
-- **Steps to Load**:
-  - Download the dataset from [this link](https://www.kaggle.com/datasets/cryptexcode/mpst-movie-plot-synopses-with-tags/data).
-  - Unzip the dataset into a directory.
-  - Place the dataset file (`mpst_full_data.csv`) in the `/data` directory.
-  - The dataset includes columns such as `imdb_id`, `title`, `plot_synopsis`, and `tags`.
-  - If necessary, preprocess the dataset by cleaning missing values or removing duplicates.
-
----
-
 ## Setup
 ### Clone this Repository
  ```bash
@@ -41,10 +29,22 @@ Activate the virtual environment:
   source venv/bin/activate
   ```
 ### Install Dependencies:
-Once the virtual environment is activated, install the project dependencies by running:
+Once the virtual environment is activated. Inside the directory, install the project dependencies by running:
  ```bash
  pip install -r requirements.txt
  ```
+---
+## Dataset
+
+- **Source**: The dataset used for the recommendation system comes from [Kaggle](https://www.kaggle.com/datasets/cryptexcode/mpst-movie-plot-synopses-with-tags/data?select=mpst_full_data.csv). It contains a collection of titles, plot synopsis and tags
+- **Steps to Load**:
+  - Download the dataset from [this link](https://www.kaggle.com/datasets/cryptexcode/mpst-movie-plot-synopses-with-tags/data?select=mpst_full_data.csv).
+  - Place the dataset file (`mpst_full_data.csv`) in the `/data` directory.
+  - Unzip the dataset 
+  - The dataset includes columns such as `imdb_id`, `title`, `plot_synopsis`, and `tags`.
+  - If necessary, preprocess the dataset by cleaning missing values or removing duplicates.
+
+---
 ### Running code  
 In this repository follow below : \
 **two folders :** data and src \
