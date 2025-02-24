@@ -59,7 +59,7 @@ In this repository follow below :
 - **src**
   - *data_cleaning.py*
   - *tfidf.py*
-  - *fine-tuned.py* \
+  - *fine-tuned.py* 
  
 If you want to clean and pre-process on the original data, I recommend to download the data from [kaggle](https://www.kaggle.com/datasets/cryptexcode/mpst-movie-plot-synopses-with-tags/data?select=mpst_full_data.csv) and then run the **data_cleaning.py** 
   ```bash
