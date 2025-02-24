@@ -50,10 +50,17 @@ Once the virtual environment is activated. Inside the directory, install the pro
 
 ---
 ### Running code  
-In this repository follow below : \
-**two folders :** data and src \
-**data** consist of data.csv, which is already cleaned and pre-processed \
-**src** consist of **data_cleaning.py**, **tfidf.py** and **fine-tuned.py** \
+In this repository follow below : 
+- **two folders**
+  - data
+  - src 
+- **data**
+  - data.csv, which is already cleaned and pre-processed 
+- **src**
+  - *data_cleaning.py*
+  - *tfidf.py*
+  - *fine-tuned.py* \
+ 
 If you want to clean and pre-process on the original data, I recommend to download the data from [kaggle](https://www.kaggle.com/datasets/cryptexcode/mpst-movie-plot-synopses-with-tags/data?select=mpst_full_data.csv) and then run the **data_cleaning.py** 
   ```bash
   python ./src/data_cleaning.py mpst_full_data.csv
